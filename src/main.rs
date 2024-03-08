@@ -12,7 +12,6 @@ async fn main() -> Result<()> {
 
     println!("secret key: {}", &secret_key.to_string());
     println!("public key: {}", &pub_key.to_string());
-    
 
     let pub_address = eth_wallet::public_key_address(&pub_key);
     println!("public address: {:?}", pub_address);
@@ -39,8 +38,6 @@ async fn main() -> Result<()> {
     //     eth_wallet::create_eth_transaction(Address::from_str("0x4fill in address here")?, 0.01);
     // let transact_hash =
     //     eth_wallet::sign_and_send(&web3_con, transaction, &loaded_wallet.get_secret_key()?).await?;
-
-    // println!("transaction hash: {:?}", transact_hash);
 
     Ok(())
 }
