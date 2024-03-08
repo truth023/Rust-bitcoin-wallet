@@ -11,6 +11,7 @@ use web3::{
     types::{Address, TransactionParameters, H256, U256},
     Web3,
 };
+
 pub fn generate_keypair() -> (SecretKey, PublicKey) {
     let secp = secp256k1::Secp256k1::new();
     let mut rng = rngs::JitterRng::new_with_timer(utils::get_nstime);
