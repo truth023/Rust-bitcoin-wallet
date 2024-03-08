@@ -5,8 +5,10 @@ mod utils;
 use std::env;
 use std::str::FromStr;
 use web3::types::Address;
+
 #[tokio::main]
 async fn main() -> Result<()> {
+
     dotenv::dotenv().ok();
     let (secret_key, pub_key) = eth_wallet::generate_keypair();
 
