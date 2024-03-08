@@ -5,7 +5,6 @@ mod utils;
 use std::env;
 use std::str::FromStr;
 use web3::types::Address;
-
 #[tokio::main]
 async fn main() -> Result<()> {
     dotenv::dotenv().ok();
